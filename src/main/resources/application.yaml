@@ -1,3 +1,13 @@
+server:
+    port: 8080
+    jetty:
+        accesslog:
+            enabled: true
+            filename: logs/jetty-access.log
+        max-http-form-post-size: 100MB
+        threads.max: 200
+        threads.min: 8
+        threads.idle-timeout: 60000
 spring:
     application:
         name: jpa-crud
